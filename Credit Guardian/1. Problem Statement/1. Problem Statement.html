@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .project-pipeline {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Credit Card Fraudulent Detection Project</h1>
+    <p>The problem statement chosen for this project is <strong>to predict fraudulent credit card transactions with the
+            help of machine learning models.</strong></p>
+    <!-- Add more content here -->
+
+    <div class="project-pipeline">
+        <h2>Project Pipeline</h2>
+        <p>The project pipeline can be briefly summarized in the following four steps:</p>
+        <ul>
+            <li><strong>Data Understanding:</strong> Here, we need to load the data and understand the features present
+                in it. This would help us choose the features that you will need for your final model.</li>
+            <li><strong>Exploratory data analytics (EDA):</strong> Normally, in this step, we need to perform univariate
+                and bivariate analyses of the data, followed by feature transformations, if necessary. For the current
+                data set, because Gaussian variables are used, you do not need to perform Z-scaling. However, we can
+                check whether there is any skewness in the data and try to mitigate it, as it might cause problems
+                during the model building phase.</li>
+            <li><strong>Train/Test split:</strong> Now, we are familiar with the train/test split that you can perform
+                to check the performance of your models with unseen data. Here, for validation, we can use the k-fold
+                cross-validation method. We need to choose an appropriate k value so that the minority class is
+                correctly represented in the test folds.</li>
+            <li><strong>Model building / hyperparameter tuning:</strong> This is the final step at which we can try
+                different models and fine-tune their hyperparameters until we get the desired level of performance on
+                the given data set. We should try and check if we get a better model by various sampling techniques.
+            </li>
+            <li><strong>Model evaluation:</strong> Evaluate the models using appropriate evaluation metrics. It should
+                be noted that since the data is imbalanced, it is more important to identify the fraudulent
+                transactions accurately than the non-fraudulent ones. Choose an appropriate evaluation metric that
+                reflects this business goal.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
